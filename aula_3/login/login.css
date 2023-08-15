@@ -1,0 +1,40 @@
+body{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #091d43;
+}
+
+.card {
+  border-style: center;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 100px;
+  box-shadow: 7px 7px 30px rgba(157, 157, 157, 0.36);
+  width: 700px;
+  height: 300px;
+}
+
+.card-content input{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #d7d7d7;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  font-size: medium;
+}
+
+.card-footer button{
+  background-color: #add6ff;
+  color: #ffffff;
+  padding: 10px 100px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border-right: 50px;
+}
