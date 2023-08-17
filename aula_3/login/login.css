@@ -1,12 +1,11 @@
 body{
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  margin: 100px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   background-color: #091d43;
+  align-content: center;
+  justify-content: center;
+  
 }
 
 .card {
@@ -15,8 +14,18 @@ body{
   border-radius: 30px;
   padding: 100px;
   box-shadow: 7px 7px 30px rgba(157, 157, 157, 0.36);
-  width: 700px;
+  width: 600px;
   height: 300px;
+}
+
+.card h2{
+  text-align: center;
+}
+
+.card-content-area{
+  align-items: center;
+  width: 100%;
+  
 }
 
 .card-content input{
@@ -29,12 +38,31 @@ body{
   font-size: medium;
 }
 
-.card-footer button{
+.card-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-footer .submit{
+  width: 100%;
   background-color: #add6ff;
   color: #ffffff;
-  padding: 10px 100px;
+  height: 40px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   border-right: 50px;
+  text-transform: capitalize;
+  margin: 20px;
+}
+
+.card-footer a{
+  color: #957639;
+  text-align: center;
+  border-top: 15px;
+  text-decoration: none;
+  font-size: 17px;
+  opacity: 0.8;
+  margin: 10px;
 }
