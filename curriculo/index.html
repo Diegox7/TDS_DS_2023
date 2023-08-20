@@ -27,8 +27,13 @@
 
     <!-- MENU  -->
     <nav>
+        <!-- BOTÃO PARA FECHAR O MENU -->
+        <div class="fechar-btn">
+            <i class="fas fa-times close-icon"></i>
+        </div>
+
         <div class="perfil">
-            <img src="./avatar.png" alt="Imgem não carregada">
+            <img src="img/avatar.png" alt="Imagem não carregada">
             <h2>Diego Gabriel</h2>
         </div>
         <a href="#">
@@ -44,16 +49,12 @@
             <span>Tabelas</span>
         </a>
         <a href="#">
-            <i class="fa fa-desktop"></i>
-            <span>Dashboard</span>
-        </a>
-        <a href="#">
             <i class="fa fa-th"></i>
-            <span>Formulario</span>
+            <span>Formulário</span>
         </a>
         <a href="#">
             <i class="fa fa-sliders-h"></i>
-            <span>COnfiguração</span>
+            <span>Configuração</span>
         </a>
         <a href="#">
             <i class="fa fa-info-circle"></i>
@@ -63,9 +64,28 @@
 
     <!-- CONTEUDO -->
     <div class="conteudo">
-
+        <!-- Conteúdo vai aqui -->
     </div>
 
     <div style="height: 99999px;"></div>
+
+    <script>
+        const chkMenu = document.getElementById('chkMenu');
+        const nav = document.querySelector('nav');
+        const skip = document.querySelector('.close-icon');
+    
+        chkMenu.addEventListener('change', function() {
+            if (chkMenu.checked) {
+                nav.style.left = '0';
+            } else {
+                nav.style.left = '-250px';
+            }
+        });
+    
+        skip.addEventListener('click', function() {
+            chkMenu.checked = false;
+            nav.style.left = '-250px';
+        });
+    </script>
 </body>
 </html>
