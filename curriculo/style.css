@@ -1,27 +1,29 @@
 body {
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     margin: 0;
-    padding: 0;
+    padding: 0; 
     font-family: 'Montserrat', sans-serif;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #333;
+    background-color: #1d0241;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px 0;
     position: fixed;
     width: 100%;
+    box-shadow: 10px 7px 15px rgba(3, 0, 25, 0.644);
 }
 
-.logo {
+.area-esqueda h1{
+    text-align: center;
     font-size: 24px;
     font-weight: bold;
     text-transform: capitalize;
 }
+
 
 .btn-sair {
     color: white;
@@ -37,19 +39,7 @@ header {
 }
 
 .btn-sair:hover {
-    background-color: #555;
-}
-
-/* Menu */
-#chkMenu {
-    display: none;
-}
-
-/* botão menu */
-#btnMenu {
-    font-size: 24px;
-    margin-left: -780px;
-    
+    background-color: #645998;
 }
 
 .perfil {
@@ -72,9 +62,9 @@ header {
 nav {
     width: 250px;
     height: 100%;
-    background-color: #e4e4e4;
+    background-color: #ffffff;
     position: fixed;
-    top: 0;
+    top: 83px;
     left: -250px;
     transition: left 0.3s ease-in;
     padding-top: 60px;
@@ -83,17 +73,17 @@ nav {
 
 /* elementos dentro do nav */
 nav a {
-    display: flex;
+    display: block;
     align-items: center;
     padding: 12px 20px;
     text-decoration: none;
     color: #161616;
-    transition: background-color 0.3s ease-in;
+    transition: 0.3s;
 }
 
 /* quando passar o cursor ele gerar um campo em branco */
 nav a:hover {
-    background-color: #ffffff;
+    background-color: #eaeaea;
 }
 
 /* icone do nav*/
@@ -102,22 +92,41 @@ nav a i {
     font-size: 18px;
 }
 
-/* 'x' do menu */
-.fechar-btn{
-    margin-left: 10px;
-    font-size: 25px;
-    margin-top: -20px;
-    margin-left: 25px;
+.conteudo{
+    background-image: url('img/fundo.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-/* Conteúdo */
-/* .conteudo {
-   background-color: #161616; 
-}  */
+/* Menu */
+#chkMenu {
+    display: none;
+}
 
+/* botão menu */
+#btnMenu {
+    font-size: 27px;
+    margin-left: -845px;
+    margin-top: -12px;
+    cursor: pointer;
+    position: fixed;
+}
 
+#chkMenu:checked~nav{
+    left: -175px;
+}
 
+#chkMenu:checked~nav a{
+    font-size: 22px;
+    margin-left: 175px;
+}
 
+#chkMenu:checked~nav span{
+    display: none;
+}
 
-
-
+#chkMenu:checked~nav a span{
+    transition-delay: 2.0s;
+}

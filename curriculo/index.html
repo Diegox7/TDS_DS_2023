@@ -27,10 +27,6 @@
 
     <!-- MENU  -->
     <nav>
-        <!-- BOTÃO PARA FECHAR O MENU -->
-        <div class="fechar-btn">
-            <i class="fas fa-times close-icon"></i>
-        </div>
 
         <div class="perfil">
             <img src="img/avatar.png" alt="Imagem não carregada">
@@ -58,7 +54,7 @@
         </a>
         <a href="#">
             <i class="fa fa-info-circle"></i>
-            <span>Informação</span>
+            <span>Sobre</span>
         </a>
     </nav>
 
@@ -67,25 +63,5 @@
         <!-- Conteúdo vai aqui -->
     </div>
 
-    <div style="height: 99999px;"></div>
-
-    <script>
-        const chkMenu = document.getElementById('chkMenu');
-        const nav = document.querySelector('nav');
-        const skip = document.querySelector('.close-icon');
-    
-        chkMenu.addEventListener('change', function() {
-            if (chkMenu.checked) {
-                nav.style.left = '0';
-            } else {
-                nav.style.left = '-250px';
-            }
-        });
-    
-        skip.addEventListener('click', function() {
-            chkMenu.checked = false;
-            nav.style.left = '-250px';
-        });
-    </script>
 </body>
 </html>
