@@ -1,28 +1,54 @@
 body {
-    background-color: #ffffff;
     margin: 0;
-    padding: 0; 
-    font-family: 'Montserrat', sans-serif;
-}
-
-/* Cabeçalho */
-header {
-    background-color: aliceblue;
+    font-family: Arial, sans-serif;
+  }
+  header {
+    background-color: #ffffff;
+    color: rgb(34, 33, 33);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    position: fixed;
-    width: 100%;
-    margin-top: 0px;
-}
-
-.area-esqueda h1{
+    padding: 10px 20px;
+  }
+  .logo {
+    margin-left: 20px;
+    display: flex;
+    /* align-items: center; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: -1px; 
+  }
+  .menu {
+    flex-grow: 1;
     text-align: center;
-    font-size: 30px;
-    font-weight: lighter;
-    text-transform: capitalize;
-}
+  }
+  .menu a {
+    color: rgb(34, 33, 33); 
+    text-decoration: none;
+    margin: 0 30px;
+  }
+  .botao-login {
+    background-color: #7e71e2;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .botao-login:hover {
+    background-color: #ba9dff;
+  }
 
-
-
-
+  .conteudo h1{
+    color: #545454;
+    margin-top: 90px;
+    margin-left: 35px;
+    width: 40%;
+    font-size: 40px;
+  }
+  .conteudo p{
+    margin-top: 10px;
+    margin-left: 35px;
+    width: 45%;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
