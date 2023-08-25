@@ -1,54 +1,62 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  header {
-    background-color: #ffffff;
-    color: rgb(34, 33, 33);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
-  .logo {
-    margin-left: 20px;
-    display: flex;
-    /* align-items: center; */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: -1px; 
-  }
-  .menu {
-    flex-grow: 1;
-    text-align: center;
-  }
-  .menu a {
-    color: rgb(34, 33, 33); 
-    text-decoration: none;
-    margin: 0 30px;
-  }
-  .botao-login {
-    background-color: #7e71e2;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  .botao-login:hover {
-    background-color: #ba9dff;
-  }
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+header {
+  background-color: #ffffff;
+  color: rgb(34, 33, 33);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.logo {
+  margin-left: 20px;
+  display: flex;
+  /* align-items: center; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: -1px; 
+}
+.menu {
+  flex-grow: 1;
+  text-align: center;
+}
+.menu a {
+  color: rgb(34, 33, 33); 
+  text-decoration: none;
+  margin: 0 30px;
+}
+.botao-login {
+  background-color: #7e71e2;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+}
 
-  .conteudo h1{
-    color: #545454;
-    margin-top: 90px;
-    margin-left: 35px;
-    width: 40%;
-    font-size: 40px;
-  }
-  .conteudo p{
-    margin-top: 10px;
-    margin-left: 35px;
-    width: 45%;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-  }
+.botao-login:hover {
+  background-color: #ba9dff;
+}
+
+.conteudo h1{
+  color: #545454;
+  margin-top: 90px;
+  margin-left: 35px;
+  width: 40%;
+  font-size: 40px;
+}
+.conteudo p{
+  margin-top: 10px;
+  margin-left: 35px;
+  width: 45%;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.img-saude{
+  margin-top: -190px;
+  margin-left: 830px;
+  width: 450px; 
+  height: 350px;
+}
