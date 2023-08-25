@@ -1,21 +1,28 @@
 body {
   margin: 0;
+  padding: 0; 
   font-family: Arial, sans-serif;
 }
-header {
+header { 
   background-color: #ffffff;
   color: rgb(34, 33, 33);
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 15px;
+  box-shadow: 0px 0px 15px rgba(3, 0, 25, 0.196);
+
 }
 .logo {
-  margin-left: 20px;
+  font-size: 22px;
+  margin-left: 40px;
   display: flex;
-  /* align-items: center; */
+  align-items: center;
+  justify-content: center;  
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: -1px; 
+  color: #7e71e2;
 }
 .menu {
   flex-grow: 1;
@@ -33,6 +40,7 @@ header {
   padding: 12px 25px;
   border-radius: 6px;
   cursor: pointer;
+  margin-right: 40px;
 }
 
 .botao-login:hover {
@@ -42,21 +50,55 @@ header {
 .conteudo h1{
   color: #545454;
   margin-top: 90px;
-  margin-left: 35px;
+  margin-left: 60px;
   width: 40%;
-  font-size: 40px;
+  font-size: 35px;
 }
-.conteudo p{
-  margin-top: 10px;
-  margin-left: 35px;
-  width: 45%;
+.p1{
+  margin-top: 50px;
+  margin-left: 60px;
+  width: 43%;
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
-.img-saude{
-  margin-top: -190px;
-  margin-left: 830px;
-  width: 450px; 
-  height: 350px;
+.p2{
+  margin-top: 20px;
+  margin-left: 60px;
+  width: 44%;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.botao-planos{
+  font-size: 18px;
+  background-color: #7e71e2;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 14px 54px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+.botao-planos:hover{
+  background-color: #ba9dff;
+}
+
+.botao-info{
+  font-size: 18px;
+  background-color: #e27177;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 14px 54px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.botao-info:hover{
+  background-color: #f7a2a2;
 }
