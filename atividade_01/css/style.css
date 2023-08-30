@@ -46,10 +46,10 @@ header {
   border-radius: 6px;
   cursor: pointer;
   margin-right: 40px;
+  text-decoration: none;
 }
 
-.botao-login a{
-  text-decoration: none;
+.botao-conteudo{
   color: white;
 }
 

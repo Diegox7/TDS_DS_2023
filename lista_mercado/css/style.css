@@ -1,0 +1,193 @@
+:root {
+    --color-select: #46BE8B;
+    --color-button: #50E3A4;
+    --color-do-fundo: #f2f2f2;
+    --color-card: #fff;
+    --color-font: rgb(72, 58, 68);
+    --color-line: #747f7f;
+    --color-danger: #ff4858;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/Jost/static/Jost-Light.ttf');
+}
+@font-face {
+    font-family: 'Jost-Thin';
+    src: url('../fonts/Jost/static/Jost-Medium.ttf');
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--color-do-fundo);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: var(--color-card);
+    margin-top: 12vh;
+    width: 50vh;
+    filter: drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.05));
+    border-radius: 20px;
+}
+
+.card-area{
+    margin: 7vh;
+}
+
+.image-logo{
+    display: flex;
+    justify-content: center;
+    user-select: none;
+}
+
+.image-logo img{
+    height: 10vh;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.card-title h1{
+    font-family: 'Jost';
+    color: var(--color-font);
+    font-size: 4vh;
+    text-transform: capitalize;
+}
+
+.card-title-line{
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-font);
+}
+
+.card-button{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -5vh;
+    width: 100%;
+    
+}
+
+.button-add{
+    background-color: var(--color-button);
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.4s;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-add span{
+    color: var(--color-select);
+    font-size: 5vh;
+}
+
+.button-add:hover{
+    opacity: 0.8;
+    width: 11vh;
+    height: 11vh;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+li{
+    list-style: none;
+}
+
+.card-content{
+    width: 100%;
+    margin-top: 1vh;
+    height: 40vh;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+.card-content-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+.item-description{
+    flex-grow: 1;
+}
+
+.card-content-input input{
+    background-color: var(--color-card);
+    border: 0px;
+    height: 18px;
+    width: 100%;
+    font-family: 'Jost';
+}
+
+.card-content-input input:focus{
+    outline: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid var(--color-line);
+}
+
+.item-del span{
+    margin-left: 0px;
+    margin-right: 1vh;
+    color: var(--color-line);
+    border-radius: 50%;
+    user-select: none;
+    font-size: 2vh;
+    cursor: pointer;
+}
+
+.item-del span:hover{
+    transition: 0.4s;
+    transition-delay: 0.5;
+    color: var(--color-card);
+    background-color: var(--color-danger);
+}
+
+.item-rad span{
+    color: var(--color-line);
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.4s;
+    transition-delay: 0.5;
+    font-size: 2.5vh;
+}
+
+.card-content-input-checked input{
+    color: var(--color-select);
+    text-decoration: line-through;
+}
+
+.item-rad-checked span{
+    color: var(--color-select);
+    cursor: pointer;
+}
+
+.item-rad span:hover{
+    color: var(--color-select);
+}
