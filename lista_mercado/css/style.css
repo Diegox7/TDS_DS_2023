@@ -191,3 +191,27 @@ li{
 .item-rad span:hover{
     color: var(--color-select);
 }
+
+/* mobile */
+@media(max-width: 450px) {
+    body{
+        background-color: var(--color-card);
+    }
+    .card{
+        margin-top: 0;
+        width: 100%;
+        filter: none;
+    }
+    .card-content{
+        height: 63vh;
+    }
+    .card-button{
+        bottom: 3vh;
+    }
+
+    ::-webkit-scrollbar{
+        width: 100%;
+    }
+
+    
+  }
