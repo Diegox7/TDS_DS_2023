@@ -131,7 +131,7 @@ function appendComponent(index, value, status) {
     } else {
         cardContentInput.setAttribute("class", "card-content-input");
     }
-
+ 
 
     //Constroi Input
     var input = window.document.createElement("input");

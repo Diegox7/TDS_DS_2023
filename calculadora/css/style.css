@@ -1,0 +1,50 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #f2f2f2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: #fff;
+    width: 50vh;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+}
+
+.operacoes button {
+    background: #f4f4f4;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.valor1 input,
+.valor2 input {
+    background-color: rgb(217, 206, 255);
+    border: none;
+    border-radius: 15px;
+    height: 30px;
+    padding: 10px;
+    width: 275px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+}
+
+/* Remova o espaço extra antes do ::placeholder */
+.valor1::placeholder,
+.valor2::placeholder {
+    color: #fff;
+}
