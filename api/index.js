@@ -1,6 +1,8 @@
 const express = require("express");
-const bodyParse = require('express').bodyParse;
+const bodyparser = require('body-parser');
 const app = new express();
+app.use(bodyparser.json());
+
 
 app.get("/alunos", (request, response)=>{
     response.send("alunos");
@@ -32,4 +34,4 @@ app.post("/somaParametros", (request, response)=>{
 
 app.listen(8080, (error)=>{
         console.log("O servidor está rodando na porta 8080! 👍");
-});
+}); 
