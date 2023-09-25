@@ -1,23 +1,64 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
+:root {
+    --background: #f4f4f4;
+    --area-left: #69819D;
+    --area-right: #fff;
+    --black: #0D1F23;
+    --white: #F2F2F2;
+    --subtitulo: #E6E6E6;
+    --color-button: #FF9F9F;
+}
+
+body{
+    background-color: var(--background);
+    font-family: 'Montserrat', sans-serif;
     padding: 0;
     margin: 0;
-    background-color: #f0f0f0;
-    margin-top: 200px;
-    margin-left: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.card {
-    background-color: rgb(146, 41, 41);
-    padding: 170px 350px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+.conteiner{
+    display: flex;
 }
 
-/* .card h1{
+.area-left{
+    height: 100px;
+    color: var(--white);
+    padding: 20px;
+    background-color: var(--area-left);
+}
+
+.area-left h1{
+    font-size: 30px;
+}
+
+.area-left h2{
+    font-size: 25px;
+}
+
+.area-right{
+    height: 100%;
+    color: var(--black);
+    padding: 20px;
     text-align: center;
-    font-size: medium;
-} */
-  
-  
+    background-color: var(--area-right);
+}
+
+.campo-input{
+    margin-bottom: 10px;
+}
+
+.campo-input input{
+    width: 80%;
+    padding: 10px;
+    color: var(--background);
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
