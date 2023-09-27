@@ -2,7 +2,7 @@
     --background: #f4f4f4;
     --area-left: #69819D;
     --area-right: #fff;
-    --black: #0D1F23;
+    --black: #0D1F23; 
     --white: #F2F2F2;
     --subtitulo: #E6E6E6;
     --color-button: #FF9F9F;
@@ -26,8 +26,8 @@ body {
 
 .area-left {
     border-radius: 31px  0px 0px 31px;
-    width: 26.6vh;
-    height: 49.8vh;
+    width: 29vh;
+    height: 50vh;
     color: var(--white);
     padding: 20px;
     background-color: var(--area-left);
@@ -54,15 +54,15 @@ body {
     font-weight: normal;
     margin-left: 6px;
     font-size: 14px;
-    margin-right: 7vh;
+    margin-right: 9vh;
 }
 
 .botao-login {
     border-radius: 100px;
-    margin-top: 73px;
+    margin-top: 55px;
     display: inline-block;
     border: 2.5px solid var(--white);
-    padding: 9px 80px;
+    padding: 9px 75px;
     text-align: center; 
     text-decoration: none;
     color: var(--white);
@@ -78,8 +78,8 @@ body {
 
 .area-right {
     border-radius: 0px 31px 31px 0px;
-    width: 54vh;
-    height: 49.8vh;
+    width: 53vh;
+    height: 50vh;
     color: var(--black);
     padding: 20px;
     text-align: center;
@@ -93,14 +93,15 @@ body {
     margin-top: 48px;
     font-size: 20px;
     font-weight: 550;
+    margin-bottom: 50px;
 }
 
 .campo-input {
-    margin-top: 2vh;
     margin-bottom: 10px; 
 }
 
 .campo-input input {
+    
     color: var(--black);
     font-weight: normal;
     font-size: 15px;
@@ -120,7 +121,7 @@ body {
 .botao-cadastre-se {
     background-color: var(--color-button);
     border-radius: 100px;
-    margin-top: 73px;
+    margin-top: 4.5vh;
     display: inline-block;
     padding: 12px 85px;
     text-align: center; 
@@ -133,3 +134,59 @@ body {
 .botao-cadastre-se .botao-conteudo-2 {
     display: block;
 }
+
+
+/* ---------------------------------------------------- */
+
+/* 
+@media(max-width: 450px) {
+    body {
+        background-color: var(--black);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container {
+        max-width: 100%;
+    }
+    
+    .area-left {
+        width: 40%;
+        height: auto;
+    }
+    
+    .area-left h1 {
+        font-size: 36px;
+    }
+    
+    .area-left h2 {
+        font-size: 24px;
+    }
+    
+    .area-left p {
+        font-size: 14px;
+    }
+    
+    .botao-login {
+        padding: 12px 60px;
+    }
+    
+    .area-right {
+        width: 60%;
+    }
+    
+    .area-right h1 {
+        font-size: 24px;
+    }
+    
+    .campo-input input {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .botao-cadastre-se {
+        padding: 12px 70px;
+    }
+      
+  } */
