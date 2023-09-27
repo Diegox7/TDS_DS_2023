@@ -8,7 +8,7 @@
     --color-button: #FF9F9F;
 }
 
-body{
+body {
     background-color: var(--background);
     font-family: 'Montserrat', sans-serif;
     padding: 0;
@@ -16,49 +16,120 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 102.5vh;
 }
 
-.conteiner{
+.container {
     display: flex;
+    filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.192));
 }
 
-.area-left{
-    height: 100px;
+.area-left {
+    border-radius: 31px  0px 0px 31px;
+    width: 26.6vh;
+    height: 49.8vh;
     color: var(--white);
     padding: 20px;
     background-color: var(--area-left);
 }
 
-.area-left h1{
-    font-size: 30px;
+.area-left h1 {
+    margin-left: 6px;
+    margin-top: 36px;
+    font-size: 32.5px;
+    font-weight: 780;
 }
 
-.area-left h2{
-    font-size: 25px;
+.area-left h2 {
+    line-height: 35px;
+    margin-left: 6px;
+    margin-top: 45px;
+    font-size: 26px;
+    margin-right: 6vh;
+    font-weight: 550;
 }
 
-.area-right{
-    height: 100%;
+.area-left p{
+    margin-top: -15px;
+    font-weight: normal;
+    margin-left: 6px;
+    font-size: 14px;
+    margin-right: 7vh;
+}
+
+.botao-login {
+    border-radius: 100px;
+    margin-top: 73px;
+    display: inline-block;
+    border: 2.5px solid var(--white);
+    padding: 9px 80px;
+    text-align: center; 
+    text-decoration: none;
+    color: var(--white);
+    margin-left: 6px;
+    font-weight: 550;
+}
+  
+.botao-login .botao-conteudo {
+    display: block;
+}
+
+/* ------------------------------------------------ */
+
+.area-right {
+    border-radius: 0px 31px 31px 0px;
+    width: 54vh;
+    height: 49.8vh;
     color: var(--black);
     padding: 20px;
     text-align: center;
     background-color: var(--area-right);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
-.campo-input{
-    margin-bottom: 10px;
+.area-right h1{
+    margin-top: 48px;
+    font-size: 20px;
+    font-weight: 550;
 }
 
-.campo-input input{
-    width: 80%;
+.campo-input {
+    margin-top: 2vh;
+    margin-bottom: 10px; 
+}
+
+.campo-input input {
+    color: var(--black);
+    font-weight: normal;
+    font-size: 15px;
+    border: none;
+    width: 35vh;
     padding: 10px;
-    color: var(--background);
+    background-color: var(--background);
     border-radius: 20px;
+    outline: none;
 }
 
+.campo-input span{
+    margin-right: -40px;
+    
+}
 
-
-
-
-
-
+.botao-cadastre-se {
+    background-color: var(--color-button);
+    border-radius: 100px;
+    margin-top: 73px;
+    display: inline-block;
+    padding: 12px 85px;
+    text-align: center; 
+    text-decoration: none;
+    color: var(--white);
+    margin-left: 6px;
+    font-weight: 550;
+}
+  
+.botao-cadastre-se .botao-conteudo-2 {
+    display: block;
+}
