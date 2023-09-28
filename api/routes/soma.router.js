@@ -1,24 +1,9 @@
 const express = require("express");
-const routes = express.Router();
-
-routes.get("/", (request, response)=>{
-    var valor1 = 10;
-    var valor2 = 10;
-
-    var resultado = valor1 + valor2;
-
-    response.send(`O resultado da soma é: ${resultado}`);
-});
+const routes = new express.Router();
+const {soma, somaParametros} = require("../controller/soma.controller");
 
 
-routes.post("/parametros", (request, response)=>{
-    const valor1 = request.body.valor1;
-    const valor2 = request.body.valor2;
+routes.get("/", soma);
+routes.post("/parametros", somaParametros); 
 
-    const resultado = valor1 + valor2;
-
-    response.send(`O resultado da soma dos parâmetros é: ${resultado}`)
-});
-
-
-module.exports = routes;
+module.exports = routes;    
