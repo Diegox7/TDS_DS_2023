@@ -1,5 +1,5 @@
 const express = require("express");
-const { listaAlunos } = require("../controller/alunos.controller");
+const { listaAlunos, buscaAlunosPorID } = require("../controller/alunos.controller");
 const routes = express.Router(); 
 
 
@@ -17,5 +17,6 @@ routes.get("/perfil", (request, response)=>{
     response.send("perfil");
 });
 
+routes.get("/(:id[0-9+])", buscaAlunosPorID);
 
 module.exports = routes;
