@@ -7,3 +7,5 @@ routes.use("/usuario", usuarioRoutes);
 
 
 module.exports = routes;
+
+
